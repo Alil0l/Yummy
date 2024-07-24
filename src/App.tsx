@@ -1,7 +1,15 @@
-import "./App.css";
+import Filter from "./components/Filters/Filter";
+import Navbar from "./components/Navbar/Navbar";
+import Plates from "./components/Plates/Plates";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+      <Filter />
+      <Plates />
+    </>
+  );
 }
 
 export default App;
