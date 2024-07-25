@@ -1,5 +1,10 @@
 import React from "react";
+import Plates from "../Plates/Plates";
 
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <Plates />
+    </>
+  );
 }
