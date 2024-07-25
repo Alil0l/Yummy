@@ -1,11 +1,9 @@
 nav {
-  @apply flex flex-col items-center justify-start gap-12 bg-slate-950 py-4 px-6 w-fit h-screen;
+  @apply flex flex-col items-center justify-start gap-12 bg-slate-950 w-fit h-screen px-16 py-16;
 }
 .logo {
-  @apply text-3xl text-white;
+  @apply text-4xl text-white;
 }
 .nav-links {
-  ul {
-    @apply flex flex-col items-center gap-4 text-white;
-  }
+  @apply flex flex-col items-start gap-4 text-white;
 }

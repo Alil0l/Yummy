@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Countries from "./components/Countries/Countries";
-import Error404 from "./components/Error404/Error404";
+import Error404 from "./components/Helpers/Error404/Error404";
 import Home from "./components/Home/Home";
 import Layout from "./components/Layout/Layout";
 import Plates from "./components/Plates/Plates";
