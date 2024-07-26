@@ -1,7 +1,7 @@
 import React from "react";
 import "./Ingredient.css";
 
-export default function Ingredient({ category }) {
+export default function Ingredient({ category }: Ingredient) {
   return (
     <div className="card">
       <div className="img">
@@ -19,4 +19,11 @@ export default function Ingredient({ category }) {
       </div>
     </div>
   );
+}
+interface Category {
+  strCategory: string;
+  strCategoryThumb: string;
+}
+interface Ingredient {
+  category: Category;
 }

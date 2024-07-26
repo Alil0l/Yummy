@@ -1,7 +1,7 @@
 import React from "react";
 import "./Plate.css";
 
-export default function Plate({ meal }) {
+export default function Plate({ meal }: Ingredient) {
   return (
     <div className="card">
       <div className="img">
@@ -19,4 +19,14 @@ export default function Plate({ meal }) {
       </div>
     </div>
   );
+}
+
+interface Meal {
+  strMeal: string;
+  strMealThumb: string;
+  strArea: string;
+  strTags: string;
+}
+interface Ingredient {
+  meal: Meal;
 }

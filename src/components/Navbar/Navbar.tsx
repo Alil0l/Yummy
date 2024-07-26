@@ -9,16 +9,13 @@ export default function Navbar() {
       <div className="links">
         <ul className="nav-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Popular Plates</Link>
           </li>
           <li>
             <Link to="/countries">Countries</Link>
           </li>
           <li>
             <Link to="/ingredients">Ingredients</Link>
-          </li>
-          <li>
-            <Link to="/plates">Popular Plates</Link>
           </li>
         </ul>
       </div>

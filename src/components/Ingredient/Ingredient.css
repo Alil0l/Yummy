@@ -3,7 +3,7 @@
 }
 
 .overlay {
-  @apply absolute duration-300 flex justify-center items-center top-[250%] left-0 text-white w-full h-full rounded-xl;
+  @apply absolute duration-150 flex justify-center items-center top-[250%] left-0 text-white w-full h-full rounded-xl;
 }
 .card:hover {
   .overlay {
