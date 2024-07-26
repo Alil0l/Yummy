@@ -1,9 +1,9 @@
 .card {
-  @apply flex flex-col lg:w-1/4 md:w-1/2 sm:w-full h-fit p-2 drop-shadow-lg relative overflow-hidden;
+  @apply flex flex-col lg:w-[24%] md:w-[49%] sm:w-full h-fit drop-shadow-lg relative overflow-hidden;
 }
 
 .overlay {
-  @apply absolute duration-300 flex justify-center items-center top-[250%] left-0 text-white w-full h-full;
+  @apply absolute duration-300 flex justify-center items-center top-[250%] left-0 text-white w-full h-full rounded-xl;
 }
 .card:hover {
   .overlay {

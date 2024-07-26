@@ -18,7 +18,7 @@ export default function Navbar() {
             <Link to="/ingredients">Ingredients</Link>
           </li>
           <li>
-            <Link to="/plates">Plates</Link>
+            <Link to="/plates">Popular Plates</Link>
           </li>
         </ul>
       </div>
