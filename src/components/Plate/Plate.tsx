@@ -1,4 +1,3 @@
-import React from "react";
 import "./Plate.css";
 
 export default function Plate({ meal }: Ingredient) {

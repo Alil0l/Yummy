@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Plate from "../Plate/Plate";
 import "./Plates.css";
 import { AppContext } from "../../AppContext";

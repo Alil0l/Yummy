@@ -1,4 +1,3 @@
-import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Countries from "./components/Countries/Countries";
 import Error404 from "./components/Helpers/Error404/Error404";

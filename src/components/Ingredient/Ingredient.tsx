@@ -1,4 +1,3 @@
-import React from "react";
 import "./Ingredient.css";
 
 export default function Ingredient({ category }: Ingredient) {
