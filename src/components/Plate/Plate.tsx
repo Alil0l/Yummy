@@ -1,6 +1,15 @@
 import "./Plate.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Plate({ meal }: Ingredient) {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate(`/plates/${meal.strMeal}`, {
+      state: { meal },
+    });
+  }
+
   return (
     <div className="card">
       <div className="img">
@@ -13,7 +22,7 @@ export default function Plate({ meal }: Ingredient) {
           <h3>{meal.strTags}</h3>
         </div>
       </div>
-      <div className="overlay">
+      <div className="overlay" onClick={handleClick}>
         <h1>Learn more...</h1>
       </div>
     </div>

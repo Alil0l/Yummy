@@ -6,6 +6,7 @@ import Layout from "./components/Layout/Layout";
 import Plates from "./components/Plates/Plates";
 import Ingredients from "./components/Ingredients/Ingredients";
 import { AppProvider } from "./AppContext";
+import PlateDetails from "./components/PlateDetails/PlateDetails";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "/countries", element: <Countries /> },
       { path: "/Ingredients", element: <Ingredients /> },
       { path: "/plates", element: <Plates /> },
+      { path: "/plates/:meal", element: <PlateDetails /> },
       { path: "*", element: <Error404 /> },
     ],
   },

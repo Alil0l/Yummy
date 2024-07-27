@@ -6,6 +6,7 @@
   @apply absolute duration-150 flex justify-center items-center top-[250%] left-0 text-white w-full h-full rounded-xl;
 }
 .card:hover {
+  @apply cursor-pointer;
   .overlay {
     @apply top-0 bg-black bg-opacity-50;
   }

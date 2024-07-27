@@ -18,6 +18,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+      <button className="toggle ">X</button>
     </nav>
   );
 }
