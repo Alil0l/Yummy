@@ -17,7 +17,14 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
         const response2 = await axios.get<CategoriesData>(
           "https://www.themealdb.com/api/json/v1/1/categories.php"
         );
-        setData({ mealsData: response.data, categoriesData: response2.data });
+        const response3 = await axios.get<CountriesData>(
+          "https://www.themealdb.com/api/json/v1/1/list.php?a=list"
+        );
+        setData({
+          mealsData: response.data,
+          categoriesData: response2.data,
+          countriesData: response3.data,
+        });
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -60,4 +67,8 @@ interface CategoriesData {
 interface Data {
   mealsData: MealsData;
   categoriesData: CategoriesData;
+  countriesData: CountriesData;
+}
+interface CountriesData {
+  meals: [];
 }
