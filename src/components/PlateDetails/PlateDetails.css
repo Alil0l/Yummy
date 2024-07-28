@@ -1,0 +1,43 @@
+.details {
+  @apply flex flex-col lg:flex-row h-screen px-6 lg:items-start items-center gap-6 py-6;
+
+  .imgD {
+    @apply md:w-1/2 w-full flex flex-col lg:items-start items-center;
+    img {
+      @apply w-full h-full object-cover rounded-3xl;
+    }
+    h1 {
+      @apply text-3xl text-center;
+    }
+  }
+
+  .content {
+    @apply lg:w-1/2 h-full p-0 m-auto overflow-y-auto w-full;
+    h3 {
+      @apply text-2xl;
+    }
+    p {
+      @apply text-sm;
+    }
+    h2 {
+      @apply text-2xl text-start;
+      span {
+        @apply text-red-500;
+      }
+    }
+    .recipes {
+      .ing {
+        @apply flex;
+        span {
+          @apply block py-2 px-4 rounded-lg bg-slate-800 w-fit;
+        }
+      }
+    }
+    .more {
+      @apply flex justify-center items-center gap-2;
+      a {
+        @apply block py-2 px-4 rounded-lg;
+      }
+    }
+  }
+}

@@ -1,17 +1,17 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Spinner from "../Helpers/Spinner/Spinner";
+import "./PlateDetails.css";
 
 export default function PlateDetails() {
-  const { meal } = useParams<{ meal: string }>();
   const location = useLocation();
   const mealDetails = location.state?.meal as Meal;
 
   if (!mealDetails) {
     return <Spinner />;
   }
-  console.log(meal, mealDetails);
+
   return (
-    <div>
+    <div className="details container">
       <div className="imgD">
         <div className="img">
           <img src={mealDetails.strMealThumb} alt={mealDetails.strMeal} />
@@ -19,25 +19,40 @@ export default function PlateDetails() {
         <h1>{mealDetails.strMeal}</h1>
       </div>
       <div className="content">
-        <h3></h3>
-        <p></p>
+        <h3>Instructions</h3>
+        <p>{mealDetails.strInstructions}</p>
         <h2>
-          <span></span>
+          Area: <span>{mealDetails.strArea}</span>
         </h2>
         <h2>
-          <span></span>
+          Category: <span>{mealDetails.strCategory}</span>
         </h2>
-        <h2>
-          <span></span>
-        </h2>
+
         <div className="recipes">
-          <h2></h2>
-          <div className="ing"></div>
+          <h2>Recipes: </h2>
+          <div className="ing">
+            <span>{mealDetails.strMeasure1}</span>
+          </div>
         </div>
         <div className="tags">
-          <h2></h2>
+          <h2>Tags: </h2>
         </div>
-        <div className="more"></div>
+        <div className="more">
+          <a
+            className="bg-green-700"
+            href={mealDetails.strSource}
+            target="_blank"
+          >
+            View Source
+          </a>
+          <a
+            className="bg-red-700"
+            href={mealDetails.strYoutube}
+            target="_blank"
+          >
+            Youtube
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -48,4 +63,9 @@ interface Meal {
   strMealThumb: string;
   strArea: string;
   strTags: string;
+  strCategory: string;
+  strInstructions: string;
+  strYoutube: string;
+  strSource: string;
+  strMeasure1: string;
 }
