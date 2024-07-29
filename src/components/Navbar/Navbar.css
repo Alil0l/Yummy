@@ -1,5 +1,5 @@
 nav {
-  @apply flex flex-col z-10 items-center relative justify-start gap-12 bg-slate-950 w-fit h-screen px-16 py-16;
+  @apply relative left-0 flex flex-col z-10 items-center  justify-start gap-12 bg-slate-950 w-fit h-screen px-16 py-16;
 }
 .logo {
   @apply text-4xl text-white;
@@ -7,6 +7,10 @@ nav {
 .nav-links {
   @apply flex flex-col items-start gap-4 text-white;
 }
-.toggle {
+/* .toggle {
   @apply px-4 py-2 bg-red-400 rounded-lg text-2xl absolute left-full top-[50%] -translate-x-1/2;
+} */
+.custHidden {
+  /* display: none; */
+  @apply left-[-50%] absolute;
 }

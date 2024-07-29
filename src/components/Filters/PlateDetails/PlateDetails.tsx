@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import Spinner from "../Helpers/Spinner/Spinner";
 import "./PlateDetails.css";
+import Spinner from "../../Helpers/Spinner/Spinner";
 
 export default function PlateDetails() {
   const location = useLocation();

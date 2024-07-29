@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ visible }: Visible) {
   return (
-    <nav>
+    <nav className={visible ? "custHidden" : ""}>
       <div className="logo">Yummy</div>
       <div className="links">
         <ul className="nav-links">
@@ -18,7 +18,10 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <button className="toggle ">X</button>
     </nav>
   );
+}
+
+interface Visible {
+  visible: boolean;
 }

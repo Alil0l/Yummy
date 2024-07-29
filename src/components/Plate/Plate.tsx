@@ -11,7 +11,7 @@ export default function Plate({ meal }: Ingredient) {
   }
 
   return (
-    <div className="card">
+    <div className="card " onClick={handleClick}>
       <div className="img">
         <img src={meal.strMealThumb} alt={meal.strMeal} />
       </div>
@@ -22,7 +22,7 @@ export default function Plate({ meal }: Ingredient) {
           <h3>{meal.strTags}</h3>
         </div>
       </div>
-      <div className="overlay" onClick={handleClick}>
+      <div className="overlay">
         <h1>Learn more...</h1>
       </div>
     </div>

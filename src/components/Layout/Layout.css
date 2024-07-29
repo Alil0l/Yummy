@@ -1,3 +1,6 @@
 .layout {
   @apply flex justify-start w-full;
 }
+.navToggle {
+  @apply text-2xl text-white hover:text-red-600 bg-slate-500 px-4 transition-all relative z-20 duration-500;
+}
