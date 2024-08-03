@@ -5,7 +5,7 @@ export default function Plate({ meal }: Ingredient) {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate(`/plates/${meal.strMeal}`, {
+    navigate(`plates/${meal.strMeal}`, {
       state: { meal },
     });
   }

@@ -8,13 +8,13 @@ export default function Navbar({ visible }: Visible) {
       <div className="links">
         <ul className="nav-links">
           <li>
-            <Link to="/">Popular Plates</Link>
+            <Link to="/Yummy">Popular Plates</Link>
           </li>
           <li>
-            <Link to="/countries">Countries</Link>
+            <Link to="countries">Countries</Link>
           </li>
           <li>
-            <Link to="/ingredients">Ingredients</Link>
+            <Link to="ingredients">Ingredients</Link>
           </li>
         </ul>
       </div>

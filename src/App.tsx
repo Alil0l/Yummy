@@ -11,16 +11,15 @@ import IngFilter from "./components/Filters/IngFilter/IngFilter";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "Yummy",
     element: <Layout />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/Yummy", element: <Home /> },
-      { path: "/countries", element: <Countries /> },
-      { path: "/Ingredients", element: <Ingredients /> },
-      { path: "/Ingredients/:category", element: <IngFilter /> },
-      { path: "/plates", element: <Plates /> },
-      { path: "/plates/:meal", element: <PlateDetails /> },
+      { index: true, element: <Home /> },
+      { path: "countries", element: <Countries /> },
+      { path: "ingredients", element: <Ingredients /> },
+      { path: "Ingredients/:category", element: <IngFilter /> },
+      { path: "plates", element: <Plates /> },
+      { path: "plates/:meal", element: <PlateDetails /> },
       { path: "*", element: <Error404 /> },
     ],
   },

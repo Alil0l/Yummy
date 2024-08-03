@@ -5,7 +5,7 @@ export default function Ingredient({ category }: Ingredient) {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate(`/Ingredients/${category.strCategory}`, {
+    navigate(`${category.strCategory}`, {
       state: { category },
     });
   }
